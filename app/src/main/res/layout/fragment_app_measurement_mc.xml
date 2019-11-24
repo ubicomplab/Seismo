@@ -1,0 +1,75 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".App_MeasurementFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp">
+        <ToggleButton
+            android:id="@+id/rec_toggle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/record_toggle"
+            android:clickable="false"
+            style="?android:attr/borderlessButtonStyle"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/view_instruction_mc"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:padding="10dp"
+            android:text="Place your finger on the camera and put the phone on your heart."
+            android:textSize="19dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="0dp"
+            android:text="Press volume down to start and stop recording."
+            android:textSize="13.6dp" />
+
+        <TextView
+            android:id="@+id/view_ptt"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:text=" "
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="30dp" />
+        <FrameLayout
+            android:id="@+id/back_camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            tools:context=".App_MeasurementSessionBPFragment"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
